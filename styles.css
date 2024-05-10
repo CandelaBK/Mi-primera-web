@@ -1,0 +1,189 @@
+* {
+
+}
+
+a{
+    color: white;
+}
+
+img{
+    width: 7%;
+}
+
+body{
+    margin: 0%;
+    padding: 0cm;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+ol, 
+ul{
+    list-style-type: none;
+    padding-right: 30px;
+}
+
+a{
+    text-decoration: none;
+    padding: 20px;
+}
+
+
+header {
+    background-color: #F4D8BA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a i{
+    background-color: #F4D8BA;
+    color: white;
+    font-size: 3em;
+    padding: 0,5em;
+}
+
+header nav ul{
+    background-color: #F4D8BA;
+    color: white;
+    display: flex;
+    gap: 2em;
+}
+
+.seccion-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    font-size: medium;
+}
+
+.section-2{
+    width: 100%;
+}
+
+footer{
+    background-color: #009688;
+    color: white;
+    width: 100%;
+    padding-bottom: 70px;
+}
+
+.pie{
+    display: flex;
+    padding: 20px;
+     
+}
+
+.footer{
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    color: #E8105B;
+    
+}
+
+
+.Servicios{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    text-align: center;
+    font-size: medium;
+}
+
+#check{
+    display: none;
+}
+
+.checkbtn{
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#btn-generar{
+    display: flex;
+    width: 20%;
+    margin-left: 50%;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 5px;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    header{
+        background-color: #E8105B;
+    }
+
+    header a i{
+        background-color: #E8105B;
+    }
+
+    header nav ul{
+        background-color: #E8105B;
+    }
+
+    .seccion-1{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .Servicios{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+
+    #encabezado ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #F4D8BA;
+        text-align: center;
+       
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+
+    #check:checked ~ ul{
+        left: 0%;
+        display: block;
+    }
+
+    #encabezado nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #encabezado nav ul li a{
+        font-size: 30px;
+    }
+
+    #check:checked ~ .checkbtn{
+        color: #009688;
+    }
+
+
+  }
